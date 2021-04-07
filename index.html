@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Front End Web Developer | Arnab Khan</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="I am Arnab Khan and I am front end wen developer. I can create any type of responsive website">
+        <meta name="keywords" content="front end web developer,Arnab Khan,Arnab-khan.github.io,html,css,javascript,web developer,project,portfolio">
+        <meta name="author" content="Arnab Khan">
+        <meta name="viewport"
+        content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="center.css">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .manu{
+            width: 100vw;
+            height: 10vh;
+            background-color: greenyellow;
+            position: relative;
+        }
+        .manu ul{
+            position: absolute;
+            width: 100vw;
+            vertical-align: middle;
+            margin-top: 3.5vh;
+            z-index: 3;
+        }
+        .manu li{
+            display: block;
+            position: absolute;
+        }
+        .project{
+            margin-left: 17%;
+        }
+        .design{
+            margin-left: 38%;
+        }
+        .about{
+            margin-left: 59%;
+        }
+        .cv{
+            margin-left: 80%;
+        }
+        .projectdiv{
+            background-color: rgb(130, 126, 0);
+            display: none;
+            padding-top: 2vh;
+        }
+        .project:hover .projectdiv{
+            display: block;
+        }
+        .projectdiv:hover{
+            background-color: rgb(0, 115, 128);
+        }
+        .designdiv{
+            background-color: rgb(130, 126, 0);
+            display: none;
+            padding-top: 2vh;
+        }
+        .design:hover .designdiv{
+            display: block;
+        }
+        .designdiv:hover{
+            background-color: rgb(0, 115, 128);
+        }
+        .aboutdiv{
+            background-color: rgb(130, 126, 0);
+            display: none;
+            padding-top: 2vh;
+            width: 90vw;
+            height: auto;
+            margin-left: -55vw;
+            text-align: justify;
+            padding: 1vw;
+            text-indent: 3vw;
+            color: rgb(251, 193, 246);
+        }
+        .about:hover .aboutdiv{
+            display: block;
+        }
+        .aboutdiv:visited{
+            background-color: rgb(0, 115, 128);
+        }
+        .cvdiv{
+            background-color: rgb(130, 126, 0);
+            display: none;
+            padding-top: 2vh;
+            width: 90vw;
+            height: auto;
+            margin-left: -75vw;
+            padding: 1vh;
+        }
+        .cv:hover .cvdiv{
+            display: block;
+        }
+        .cvdiv:visited{
+            background-color: rgb(0, 115, 128);
+        }
+
+
+        .center{
+            width: 100vw;
+            height: 70vh;
+            background-color: rgb(91, 91, 56);
+            position: absolute;
+            z-index: -1;
+            top: 10vh;
+        }
+        .center p{
+            color: teal;
+            position: absolute;
+            text-align: center; 
+        }
+
+
+        .contact{
+            background-color: violet;
+            height: 20vh;
+            width: 100vw;
+            position: absolute;
+            top: 80vh;
+        }
+        .facebook{
+            position: absolute;
+            top: 5vh;
+            left: 10vw;
+            height: 10vh;
+            width: 10vh;
+            border: 1px solid black;
+           
+        }
+        .instagram{
+            border: .1vh solid black;
+            position: absolute;
+            top: 5vh;
+            left:30vw;
+            height: 10vh;
+            width: 10vh;
+        }
+        .linkedin{
+            border: 1px solid black;
+            position: absolute;
+            top: 5vh;
+            left: 50vw;
+            height: 10vh;
+            width: 10vh;
+        }
+        .whatsapp{
+            border: 1px solid black;
+            position: absolute;
+            top: 5vh;
+            left: 70vw;
+            height: 10vh;
+            width: 10vh;
+        }
+        .close{
+            position: absolute;
+            width: 13vw;
+            height: 8vh;
+            top: 1vh;
+            left: 55vw;
+            text-align: center;
+            padding-top: 1.5vh;
+            display: none;
+        }
+        .closemanu{
+            position: absolute;
+            width: 13vw;
+            height: 6vh;
+            top: 1vh;
+            left: 5vw;
+            text-align: center;
+            padding-top: 1.5vh;
+            display: none;
+            background-color:rgb(238, 0, 255);
+            font-size: 12px;
+        }
+        a{
+            color: white;
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .manu:hover{
+                top: 0vh;
+                left: 50vw;
+                width: 50vw;
+                height: 80vh;
+                background-color: greenyellow;
+                background-image: none;
+            }
+            .manu:hover ul{
+                display: block;
+            }
+            .manu:hover .closemanu{
+                display: block;
+            }                   
+            .manu{
+                position: relative;
+                top: 2vh;
+                left: 85vw;
+                width: 7vw;
+                height: 10vw;
+                background-color: transparent;
+                background-image: linear-gradient(transparent 17.5%,black 27.5%,transparent 30%,transparent,black 55%,transparent 52.5%,transparent,black 82%,transparent 80%);
+                transition-duration: 2s;
+            }
+            .manu ul{
+                top: 6vh;
+                width: 50vw;
+                display: none;
+            }
+            .manu li{
+                position: static;
+                padding-top: 2vh;
+            }
+            .project{
+            margin-left: 10vw;
+            position: static;
+            }
+           .design{
+            margin-left: 10vw;
+            position: static;
+            }
+           .about{
+            margin-left:10vw;
+            }
+           .cv{
+            margin-left: 10vw;
+            }
+            .cvdiv{
+                margin-left: -55vw;
+            }
+            .center{
+                height: 72vh;
+                top: 8vh;
+            }
+            .close{
+                display: block;
+            }
+        }
+
+
+        @media only screen and (max-width: 1100px) and (min-width: 500px) {
+            *{
+                font-size: 23px;
+            }
+        }
+    </style>
+    <body>
+        <div class="manu">
+            <ul>
+                <li class="project">PROJECTS
+                    <div class="projectdiv"><a href="#">project1</a></div>
+                    <div class="projectdiv"><a href="#">project2</a></div>
+                    <div class="projectdiv"><a href="#">project3</a></div>
+                </li>
+                <li class="design">DESIGN
+                    <div class="designdiv"><a href="#">design1</a></div>
+                    <div class="designdiv"><a href="#">design2</a></div>
+                    <div class="designdiv"><a href="#">design3</a></div>
+                </li>
+                <li class="about">ABOUT ME
+                    <div class="aboutdiv">
+                        <p>My name is Arnab Khan and I am a <b>front end web developer</b>. I can create any kind 
+                           of <b>responsive static website</b> with <b>animation</b>. I have ability to create
+                           complex <b>JavaScript program</b> like video game, mathametical operation etc. if any one
+                           want hire me for job then contact me.<br><br>
+                           mobile no- <a href="tel:+9174079309">+91 7407930967</a><br>
+                           email-<a href="mailto:aranabkhan@gmail.com"> aranabkhan@gmail.com</a><br>
+                           address- Arambagh, Hooghly, West Bengal, India.
+                        </p>
+                    </div>
+                </li>
+                <li class="cv">MY CV
+                    <div class="cvdiv">
+                        Location: Arambagh, WB, 712413<br>
+                        mobile no: <a href="tel:+9174079309">+91 7407930967</a><br>
+                        email:<a href="mailto:aranabkhan@gmail.com"> aranabkhan@gmail.com</a><br><br>
+                        <h5><p>I am front end web developer. I shall contribute to team for success through hard 
+                        work,attention to details excellent skill. Clear understanding of task and motivation to 
+                        learn.</h5></p><br><br>
+                        <h3>skill</h3><hr><br>
+                        <b>Web development:</b>Front end, Responsive, Animation, Mathemetical operation.<br>
+                        <b>Programming language:</b>HTML5, CSS3, JavaScript.<br>
+                        <b>Frame work:</b><br>
+                        <b>other:</b><br><br>
+                        <h3>project</h3><hr><br>
+                        Visiting my github pages<br></br>
+                        <h3>Education</h3><hr><br>
+                        &nbsp &nbsp &nbsp &nbsp <b>M.Sc Physics (2020)</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 63%<br>
+                        Midnapore City College - Vidyasagar University<br><br>
+                        &nbsp &nbsp &nbsp &nbsp <b>B.Sc Physics (2018)</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 55%<br>
+                        Netaji Mahavidyalaya - The University Burdwan<br><br>
+                        <h3>Languages</h3><hr><br><br>
+                        English, Bengali, Hindi
+                    </div>
+                </li>
+        </ul>
+        <div class="closemanu">CLOSE</div>
+    </div>
+
+
+    <div class="center"> 
+        <div class="center1"></div>
+        <div class="center2"></div>
+        <div class="center3"></div>
+        <p>HI I AM ARNAB KHAN.<BR> WELL COME TO MY WEBSITE</p>
+        <div class="center4">THANKS FOR VISITING</div>
+    </div>
+   
+   
+    <div class="contact">CONTACT ME
+        <a href="https://m.facebook.com/arnab.khan.5621" class="facebook">f</a>
+        <a href="https://www.instagram.com/arnabkhan100/" class="instagram">
+            <div class="instagramdiv"></div>
+        </a>
+        <a href="https://www.linkedin.com/in/arnab-khan-14868318b" class="linkedin">in</a>
+        <a href="https://wa.me/+917407930967" class="whatsapp">
+            <div class="whatsappdiv"></div>
+        </a>
+    </div>
+    <div class="close"></div>
+        <div class="close"></div>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+.center{
+   vertical-align: middle;
+}
+.center p{
+    color: #00ff99;
+    font-weight: 900;
+    font-size: 5vw;
+    font-family: cursive;
+    text-shadow: .2vw .2vw black,-.4vw -.4vw blue,-.4vw -.4vw .5vw blue,0 0 2vw darkblue;
+    position: absolute;
+    text-align: center;
+    left:10vw;
+    bottom: 20vh;
+    transition: font-size,1s;
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.center p:hover{
+    font-size: 6vw;
+    left: 2vw;  
+}
+
+    
+.center1{
+    position: absolute;
+    background-color: white;
+    height: 10vh;
+    width: 10vh;
+    top: 5vh;
+    left: 14vw;
+    border-radius: 50%;
+    background-image: radial-gradient(#ff3300,#ff99ff,#ffffcc);
+    animation-name: center1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.center2{
+    position: absolute;
+    background-color: white;
+    height: 10vh;
+    width: 10vh;
+    top: 5vh;
+    left: 45vw;
+    border-radius: 50%;
+    background-image: radial-gradient(#00ccff,#66ff33,#c6ffb3);
+    animation-name: center2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.center3{
+    position: absolute;
+    background-color: white;
+    height: 10vh;
+    width: 10vh;
+    top: 5vh;
+    left: 75vw;
+    border-radius: 50%;
+    background-image: radial-gradient(#290066,#1a53ff,#b3c6ff);
+    animation-name: center3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes center1{
+    0%{background-image: radial-gradient(#ff3300,#ff99ff,#ffffcc);}
+    12.5%{background-image: radial-gradient(#ff3300,#66ff33,#c6ffb3);}
+    25%{background-image: radial-gradient(#ff3300,#1a53ff,#b3c6ff);}
+    37.5%{background-image: radial-gradient(#00ccff,#ff99ff,#ffffcc);}
+    50%{background-image: radial-gradient(#00ccff,#66ff33,#c6ffb3);}
+    62.5%{background-image: radial-gradient(#00ccff,#1a53ff,#b3c6ff);}
+    75%{background-image: radial-gradient(#290066,#ff99ff,#ffffcc);}
+    87.5%{background-image: radial-gradient(#290066,#66ff33,#c6ffb3);}
+    100%{background-image: radial-gradient(#290066,#1a53ff,#b3c6ff);}
+}
+@keyframes center2{
+    
+    0%{background-image: radial-gradient(#00ccff,#1a53ff,#b3c6ff);}
+    12.5%{background-image: radial-gradient(#00ccff,#ff99ff,#ffffcc);}
+    25%{background-image: radial-gradient(#00ccff,#66ff33,#c6ffb3);}
+    37.5%{background-image: radial-gradient(#290066,#1a53ff,#b3c6ff);}
+    50%{background-image: radial-gradient(#290066,#ff99ff,#ffffcc);}
+    62.5%{background-image: radial-gradient(#290066,#66ff33,#c6ffb3);}
+    75%{background-image: radial-gradient(#ff3300,#1a53ff,#b3c6ff);}
+    87.5%{background-image: radial-gradient(#ff3300,#ff99ff,#ffffcc);}
+    100%{background-image: radial-gradient(#ff3300,#66ff33,#c6ffb3);}
+}
+@keyframes center3{
+    0%{background-image: radial-gradient(#290066,#66ff33,#c6ffb3);}
+    12.5%{background-image: radial-gradient(#290066,#1a53ff,#b3c6ff);}
+    25%{background-image: radial-gradient(#290066,#ff99ff,#ffffcc);}
+    37.5%{background-image: radial-gradient(#ff3300,#66ff33,#c6ffb3);}
+    50%{background-image: radial-gradient(#ff3300,#1a53ff,#b3c6ff);}
+    62.5%{background-image: radial-gradient(#ff3300,#ff99ff,#ffffcc);}
+    75%{background-image: radial-gradient(#00ccff,#66ff33,#c6ffb3);}
+    87.5%{background-image: radial-gradient(#00ccff,#1a53ff,#b3c6ff);}
+    100%{background-image: radial-gradient(#00ccff,#ff99ff,#ffffcc);}
+}
+
+
+@keyframes rotate{
+    0%{transform: rotateY(0deg);}
+    10%{transform: rotateY(45deg);}
+    20%{transform: rotateY(0deg);}
+    40%{transform: rotateY(90deg);}
+    60%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
+
+
+.center4{
+    position: absolute;
+    bottom: 2vh;
+    left: 27vw;
+    height:auto;
+    width: auto;
+    color: transparent;
+    font-size: 4vw;
+    border-radius: 50%;
+    background-color: #ff00ff;
+    transition-duration: 2s;
+}
+.center4:hover{
+    position: absolute;
+    background-color: #99ff33;
+    color: #ff00ff;
+    left: 4vw;
+    height:auto;
+    width: auto;
+    font-size: 8.5vw;
+}
+
+
